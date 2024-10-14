@@ -191,7 +191,21 @@ const AppointmentForm = () => {
     }
 
     setIsOpen(true);
+    // Validate against logged-in patient details
+  const dobFormatted = new Date(dob).toISOString(); // Ensure consistency in format
+  if (
+    firstName !== loggedPatient.firstName ||
+    lastName !== loggedPatient.lastName ||
+    nic !== loggedPatient.nic ||
+    dobFormatted !== loggedPatient.dob ||
+    gender !== loggedPatient.gender
+  ) {
+    toast.error("Form details do not match the logged-in patient's details.");
+    setIsSubmitting(false); // Reset the submitting state
+    return;
+  }
   };
+  
 
   const addAppointment = async () => {
     try {
