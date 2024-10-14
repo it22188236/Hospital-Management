@@ -1,0 +1,73 @@
+/* Container styling */
+.qr-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  /* Title styling */
+  .qr-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* QR code wrapper */
+  .qr-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* QR code styling */
+  .qr-code {
+    margin-bottom: 20px;
+  }
+  
+  /* Button styling */
+  .qr-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .qr-button:hover {
+    background-color: #45a049;
+  }
+  
+  .back-button {
+    background-color: #2a4ca9;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 50px;
+  }
+  
+  .back-button:hover {
+    background-color: #2a4ca9d8;
+  }
+
+  /* Loading text styling */
+  .loading-text {
+    font-size: 16px;
+    color: #777;
+  }
